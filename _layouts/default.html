@@ -10,30 +10,20 @@
 
     <!--STYLESHEETS USEREF GULP-->
     <!--build:css assets/stylesheets/main.min.css -->
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
-    <link rel="stylesheet" href="assets/plugin/paradeiser/paradeiser.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="assets/stylesheets/modules.css">
-    <!-- endbuild -->
-
+    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
    
-    
-     <!--FONTS-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:300,500,600,700|Dancing+Script:400|Pacifico|Muli:400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
      
 
 </head>
     <header>
-    <nav>
-        <a href="{{site.baseurl}}/index.html"> index </a>
-        <a href="{{site.baseurl}}/news.html"> news </a>
-        </nav>
+    {% include nav.html %}
     </header>
     
     
 {{content}}
     
     
-    
+    <footer>
+    {% include nav.html %}
+    </footer>
 </html>
