@@ -1,5 +1,7 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -10,20 +12,30 @@
 
     <!--STYLESHEETS USEREF GULP-->
     <!--build:css assets/stylesheets/main.min.css -->
-    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
-   
-     
+    <link rel="stylesheet" href="{{site.basurl}}/assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="{{site.basurl}}/assets/plugin/paradeiser/paradeiser.css">
+    <link rel="stylesheet" href="{{site.basurl}}/assets/stylesheets/main.css">
+    <link rel="stylesheet" href="{{site.basurl}}/assets/stylesheets/modules.css">
+    <!-- endbuild -->
+
+
+
+    <!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,500,600,700|Dancing+Script:400|Pacifico|Muli:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 </head>
-    <header>
-    {% include nav.html %}
-    </header>
-    
-    
-{{content}}
-    
-    
-    <footer>
-    {% include nav.html %}
-    </footer>
+
+<body>
+
+    <div class="boxed-container" itemscope itemtype="http://schema.org/Organization">
+        <section class="content-container clearfix">
+            {% include header.html %}
+            {{content}}
+            {% include footer.html %}
+        </section>
+    </div>
+</body>
+
 </html>

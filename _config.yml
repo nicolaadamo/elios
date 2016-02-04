@@ -1,4 +1,3 @@
 markdown: redcarpet
 baseurl: /elios
 exclude: ['README.md'] 
-regenerate: true

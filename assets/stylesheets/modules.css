@@ -1,0 +1,341 @@
+
+
+/*
+  ========================================
+  *****   PAGE BANNER  ********
+
+  =======================================s
+*/
+
+
+/*--OK--*/
+
+.page-title-banner h1 {
+    margin: 0 0;
+}
+
+.page-title-banner {
+    /* background: #f6f1e7;*/
+    background: url("../images/patterns/juta_sack.jpg") 0 0 repeat;
+    text-align: center;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    padding: 24px;
+}
+
+
+/*
+  ========================================
+  Button 
+  ========================================
+*/
+
+
+/*--OK--*/
+
+.btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-active {
+    border: 1px solid #fff;
+    background: #f6a04b;
+    /* orange*/
+}
+
+.btn-success {
+    border: 1px solid #fff;
+    background: #8cad3e;
+    /* green*/
+}
+
+
+
+/*
+  ========================================
+  INPUT
+  ========================================
+*/
+
+
+/*OK*/
+
+input,
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+}
+
+
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+
+
+/*OK*/
+
+.beige-back {
+    background: #f6f1e7;
+}
+
+
+/*
+  ========================================
+  PEOPLE AVATAR
+  =======================================s
+*/
+
+.nicola-intro,
+.roberto-intro {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 24px;
+}
+
+.nicola-intro {
+    text-align: left;
+}
+
+.roberto-intro {
+    text-align: right;
+}
+
+.nicola-intro img,
+.roberto-intro img {
+    height: 100px;
+    width: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+  ========================================
+  IMAGE COLLAGE
+  =======================================s
+*/
+
+.image-collage .first-row,
+.image-collage .second-row {
+    margin: 1.5% 0;
+}
+
+.image-collage .col-1-2 {
+    width: 49.25%;
+    float: left;
+}
+
+.image-collage .col-1-2.left {
+    margin-right: 0.75%;
+}
+
+.image-collage .col-1-2.right {
+    margin-left: 0.75%;
+}
+
+/*
+  ========================================
+  NEWSLETTER BOX
+  =======================================s
+*/
+
+
+/*OK*/
+
+.newsletter {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 48px;
+}
+
+.newsletter-text {
+    margin-bottom: 12px;
+}
+
+@media all and (min-width: 940px) {
+    .newsletter-text {
+        margin-top: 12px;
+    }
+    .newsletter-text,
+    newsletter-form {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/*
+  ========================================
+  OTHER PRODUCTS GRID
+  ========================================
+*//*OK*/
+
+.other-products-grid {
+    margin: 0 1.5%;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.other-left img {
+    display: none;
+    height: 130px;
+}
+
+.other-right img {
+    height: 130px;
+}
+
+@media all and (min-width: 599px) {
+    .other-left img {
+        display: block;
+    }
+    .other-left {
+        float: left;
+        width: 20%;
+        margin-left: 12%;
+    }
+    .other-middle {
+        float: left;
+        width: 33%;
+        margin: 0 1.5%;
+    }
+    .other-right {
+        float: right;
+        width: 20%;
+        margin-right: 12%;
+    }
+}
+
+
+
+
+/*
+  ========================================
+  HEADER
+  =======================================s
+*/
+
+.header-desktop {
+    display: none;
+}
+
+
+/* PAREDEISER MENU   */
+
+#paradeiser-logo-img {
+    width: 90px;
+    height: 90px;
+    margin-left: 2%;
+}
+
+
+/* menu per dim>= 768 px devices nasconde menu mobile,  */
+
+@media all and (min-width: 768px) {
+    
+    /*MENU SWITCH */
+    .header-mobile {
+        display: none;
+    }
+    .header-desktop {
+        display: block;
+    }
+    /* LOGO*/
+    .logo {
+        float: left;
+        max-width: 20%;
+        margin: 24px 1.5% 24px;
+    }
+    .logo img {
+        width: 100%
+    }
+    /* PRIMARY NAV */
+    .primary-nav {
+        float: left;
+        margin: 88px 0 0 3%;
+        text-align: center;
+        max-width: 65%;
+    }
+    .primary-nav a {
+        margin: 10px;
+    }
+    /* SHOPPING NAV */
+    .shopping-nav {
+        float: right;
+        margin: 88px 1.5% 0 0;
+    }
+    /* SOCIAL NAV*/
+    .primary-social {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        font-size: 0.85em;
+       
+    }
+    .primary-social i {
+        margin: 10px;
+    }
+    .primary-social a {
+        color: #888;
+    }
+}
+
+
+
+/*
+  ========================================
+  FOOTER
+  ========================================
+*/
+
+footer {
+    text-align: center;
+    background: url("../images/patterns/elios_products_footer_pattern.png") 0 0 repeat;
+    color: white !important;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.footer-content {
+    margin: 24px 1.5%
+}
+
+footer a {
+    margin: 0 12px;
+    color: white !important;
+}
+
+.footer-row {
+    margin-bottom: 12px;
+}
+
+.secondary-social i {
+    font-size: 1.5em;
+    margin: 0 12px;
+}
+
+.footer-nav,
+.terms,
+.copy {
+    font-size: 0.875em;
+}

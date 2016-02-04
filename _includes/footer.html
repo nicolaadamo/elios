@@ -1,0 +1,97 @@
+<footer class="clearfix">
+    <section class="footer-content">
+        <section class="footer-nav footer-row">
+            <nav>
+                <a href="index.html">Welcome</a>
+                <a href="our-story.html">Our Story</a>
+                <a href="products.html">Products</a>
+                <a href="the-farm.html">The Farm</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </section>
+
+        <section class="footer-mobile-contacts footer-row">
+            <a href="tel:+393334095994">
+                <span itemprop="founder" itemscope="" itemtype="http://schema.org/Person">
+                            <span itemprop="name">
+                                <b>Nicola</b>
+                            </span>:
+                <span itemprop="telephone">+39 333 4095 994</span>
+                </span>
+            </a>
+            <a href="tel:+393280250284">
+                <span itemprop="founder" itemscope="" itemtype="http://schema.org/Person">
+                        <span itemprop="name"><b>Roberto</b></span>:
+                <span itemprop="telephone">+39 328 0250 284</span>
+                </span>
+            </a>
+        </section>
+
+        <section class="secondary-social footer-row">
+            <a href="https://www.facebook.com/Elios-best-of-Sicily-411924605607958/"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </section>
+
+        <section class="terms footer-row">
+            <nav>
+                <a href="#">Privacy</a>
+                <a href="#">Copyright</a>
+            </nav>
+        </section>
+        <section class="copy">
+            <span itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                            <small itemprop="name">&copy; "Elios - best of Sicily"</small>
+                            <small> is a trademark of</smal>
+                        </span>
+            <br>
+            <span itemprop="legalName">
+                            <small>Elios - Best of Sicily di Adamo Roberto & Co. s.a.s.</small>
+                        </span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                           <br> <span itemprop="streetAddress">Viale europa 280/a</span>,
+            <span itemprop="postalCode">91011</span>
+            <span itemprop="addressLocality">Alcamo</span>
+            <span>(TP)</span>
+            <span itemprop="addressRegion">Sicily</span>,
+            <span itemprop="addressCountry">Italy</span>
+            </span>
+        </section>
+    </section>
+</footer>
+
+
+<script>
+    src = "http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js" >
+</script>
+<script>
+    (function () {
+
+        // enabling to open the overflow menu as the pure css link
+        // would toggle a scroll and therefore hide the menu
+        document.getElementById("paradeiser-dropdown").addEventListener("click", function (event) {
+            // stopping the scroll
+            event.preventDefault();
+            // toggling the class
+            document.getElementById("paradeiser-more").classList.toggle("open");
+        });
+
+        // hide the menu on click onto greybox
+        document.getElementById("greybox").addEventListener("click", function (event) {
+            // stopping the scroll
+            event.preventDefault();
+            // toggling the class
+            document.getElementById("paradeiser-more").classList.remove("open");
+        });
+
+        // enabling headroom
+        var myElement = document.querySelector(".paradeiser");
+        var headroom = new Headroom(myElement, {
+            tolerance: 5,
+            onUnpin: function () {
+                document.getElementById("paradeiser-more").classList.remove("open");
+            }
+        });
+        headroom.init();
+    })();
+</script>

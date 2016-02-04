@@ -1,0 +1,810 @@
+/*
+  ========================================
+  Grid
+  BOX SIZING
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.boxed-container {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+}
+
+
+/*
+  ========================================
+  CLEARFIX
+  =======================================s
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*
+  ========================================
+  TYPOGRAPHY
+  =======================================s
+*/
+
+body {
+    margin-top: 0;
+    font: 16px/1.5em "Muli", Helvetica, sans-serif;
+    color: #333;
+    background: url("../");
+}
+
+input,textarea {
+    font-family: "Muli";
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+b {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", Garamond, Lucida, sans-serif;
+}
+
+h1 {
+    font-size: 2.25em;
+    /*  36 px*/
+    line-height: 1.25em;
+    /*  44 px*/
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5em;
+    /*  24 px*/
+    line-height: 1.5em;
+    /*  36 px*/
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.312em;
+    /*  21 px*/
+    line-height: 1.5em;
+    /*  32 px*/
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.125em;
+    /*  18 px*/
+    line-height: 1.5em;
+    /*  27 px*/
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 0.875em;
+    /*  14 px*/
+    line-height: 1.5em;
+    /*  21 px*/
+    font-weight: 600;
+    color: #555;
+    letter-spacing: .2em;
+}
+
+h6 {
+    font-size: 0.8125em;
+    /*  13 px*/
+    line-height: 1.5em;
+    /*  21 px*/
+    font-weight: 200;
+    color: #777;
+    letter-spacing: .2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 24px;
+}
+
+.primary-nav,
+.shopping-nav {
+    font-size: 0.875em;
+    /* 14px */
+    line-height: 1.312em;
+    /* px 18 */
+    font-weight: 700;
+}
+
+.and {
+    font-family: "Pacifico", "Dancing Script", "Muli", sans-serif;
+}
+
+.script {
+    font-family: "Dancing Script", "Pacifico", "Muli", sans-serif;
+}
+
+
+/*  Typographic scale for mobile devices*/
+
+body {
+    font-size: 80%;
+}
+
+@media all and (min-width:599px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media all and (min-width:800px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+
+/*
+  ========================================
+  CONTAINER modifica necessaria per 
+  impostare le cose dopo che si attiva 
+  il paredeiser menu
+  =======================================s
+*/
+
+.content-container {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    .content-container {
+        position: static;
+    }
+}
+
+
+/*
+  ========================================
+  ******    HOME  ************
+  =======================================s
+*/
+
+
+/*
+  ========================================
+  HERO
+  =======================================s
+*/
+
+.hero {
+    background: url("../images/patterns/juta_sack.jpg") 0 0 repeat;
+    /*distanza da top di 100 per via del paradeiser che poi dopo 768 devo annullare*/
+    width: 100%;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 48px;
+}
+
+.hero-text {
+    margin: 48px 1.5% 12px;
+}
+
+.hero-img {
+    margin: 0 1.5%;
+}
+
+.hero-img img {
+    width: 50%;
+}
+
+@media all and (min-width:599px) {
+    .hero-text {
+        float: left;
+        width: 52%;
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+    .hero-img {
+        float: right;
+        width: 42%;
+        margin-top: 24px;
+    }
+    .hero-img img {
+        width: 85%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .hero {
+        position: relative;
+        top: 0;
+    }
+}
+
+
+/*
+  ========================================
+  HOME CARDS
+  =======================================s
+*/
+
+
+/*OK*/
+
+.cards-grid {
+    margin-bottom: 48px;
+}
+
+.cards-grid .card {
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5% 12px;
+}
+
+.cards-grid .card h3 {
+    color: #51af5b;
+    font-weight: 600;
+}
+
+.cards-grid .card-img {
+    height: 100px;
+    margin-bottom: 12px;
+}
+
+@media all and (min-width: 599px) {
+    .card.col-1-3 {
+        float: left;
+        max-width: 30%;
+    }
+}
+
+
+/*
+  ========================================
+  PRODUCTS GRID
+  ========================================
+*/
+
+
+/*OK*/
+
+.products-card-grid {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.product-card {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin: 0 1.5% 24px;
+}
+
+.product-card-wine img {
+    width: 180px;
+}
+
+.product-card-oil img {
+    width: 120px;
+}
+
+.product-card-honey img {
+    width: 140px;
+}
+
+@media all and (min-width: 599px) {
+    .product-card {
+        float: left;
+        width: 30%;
+        height: 500px;
+    }
+    .product-card-honey img {
+        max-width: 140px;
+        padding-top: 60px;
+    }
+}
+
+
+/*
+  ========================================
+  ABOUT US INTRO
+  ========================================
+*/
+
+
+/* OK*/
+
+.about-us-intro {
+    text-align: center;
+    padding: 0 1.5% 48px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.saverio-intro img {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+}
+
+#gone-far {
+    font-size: 1.5em;
+}
+
+@media all and (min-width:768px) {
+    .saverio-intro-img {
+        float: left;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    .saverio-intro-text {
+        float: left;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+}
+
+
+/*
+  ========================================
+  ******    PRODUCTS  ************
+  =======================================s
+*/
+
+.icon-olive-oil,
+.icon-grape,
+.icon-honey {
+    max-height: 30px;
+    width: auto;
+    margin-bottom: 6px;
+}
+
+
+/* TBA STYLE Settings  */
+
+.tabs-style-iconbox nav {
+    background: #f1f1f1 !important;
+}
+
+.tabs-style-iconbox nav ul li a {
+    padding: 12px 0!important;
+}
+
+.tabs-style-iconbox li h4 {
+    margin-bottom: 0 !important;
+}
+
+
+/* products container - continee tutti i prodotti della tab  */
+
+.products-container {
+    margin: 24px 0 72px;
+}
+
+.single-product {
+    margin: 24px 0 48px;
+}
+
+
+/* impostazione del colore delle title dei prodotti in base al colore del prodotto stesso */
+
+.first-part-title.olive-oil, .product-description-section.olive-oil h5 {
+    color: #51af5b;
+}
+
+.first-part-title.red-wine, .product-description-section.red-wine h5  {
+    color: #b53a68;
+}
+
+ .first-part-title.white-wine, .product-description-section.white-wine h5 {
+    color: #ccd02c;
+}
+
+ .first-part-title.honey, .product-description-section.honey h5 {
+    color: #f6a04b;
+}
+
+.product-title h4 {
+    margin-bottom: 0px;
+}
+
+
+/* un single-product è composta da 2 section product-text e product-gallery  */
+
+
+/* product-text è composto da product-title e product-description  */
+
+
+/* product-title è composto da first-part-title e second-part-title  */
+
+
+/* product-description è composto da più product-description-section: product-varietis, prodcut-technical-details product-organoleptic-features  */
+
+.product-title {
+    margin-bottom: 24px;
+}
+
+.product-description {
+    text-align: justify;
+}
+
+.product-description-section {
+    margin-bottom: 24px;
+}
+
+.product-description-section h5 {
+    margin-bottom: 0px;
+}
+
+.product-description-section span {
+    font-size: 0.8em;
+}
+
+img.taste-icons {
+    width: 30px;
+}
+
+.organoleptic-content li {
+    margin-bottom: 12px;
+}
+
+
+/* propduct-gallery*/
+
+.product-gallery {
+    border: 1px solid #C7C3BB;
+    background: url("../images/patterns/table_pattern.png") 0 0 repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-gallery-zoom-text {
+    background: rgba(199, 195, 187, 0.35);
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    color: black!important;
+}
+
+.product-gallery-zoom-text h6 {
+    color: black;
+    font-size: 0.9em;
+}
+
+.product-gallery img {
+    margin: 36px 24px;
+    height: 350px;
+}
+
+
+/* Intro alla categoria dei prodotti  */
+
+
+/* bubble introduction per singola categoria di prodotti  */
+
+.bubble {
+    position: relative;
+    background: #f6f1e7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 24px;
+}
+
+.bubble.white {
+    background: #ffffff;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 48%;
+    border-style: solid;
+    border-width: 0 15px 15px;
+    border-color: #f6f1e7 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.product-intro-img {
+    margin-bottom: 24px;
+}
+
+.product-intro-img img {
+    height: 150px;
+    width: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+@media all and (min-width:768px) {
+    .product-text {
+        float: left;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    .product-text.left {
+        float: left;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    .product-text.right {
+        float: right;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    .product-gallery {
+        float: left;
+        width: 47%;
+        margin: 0 1.5%;
+    }
+    .product-intro-img {
+        float: left;
+        width: 20%;
+        margin: 0 1.5%;
+    }
+    .product-intro .bubble {
+        width: 74%;
+        margin: 0 1.5%;
+        float: left;
+        position: relative;
+        padding: 0px;
+        background: #f6f1e7;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        padding: 6px;
+        margin-bottom: 24px;
+    }
+    .product-intro .bubble:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: -15px;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent #f6f1e7;
+        display: block;
+        width: 0;
+        z-index: 1;
+    }
+}
+
+
+
+.expandable {
+    padding-top: 10px;
+    /* overflow set to hidden to hide the expanded text */
+    overflow: hidden;
+    /* all style changes will ease-in-out for 1s */
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s;
+}
+
+
+/*
+  ========================================
+  ******   OUR STORY  ************
+  =======================================s
+*/
+
+
+/* sezione intro nicola e roberto*/
+
+.our-story-intro {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.our-story-intro-text h2 {
+    margin-bottom: 0;
+}
+
+
+/* singole sezioni persona */
+
+.our-story-section {
+    padding: 24px 1.5%;
+}
+
+.our-story-section-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.our-story-section-text {
+    padding-top: 24px;
+}
+
+.our-story-section-text-title {
+    display: none;
+}
+
+.roberto-speaking,.nicola-speaking{
+    text-align: center;
+}
+
+.roberto-speaking img,.nicola-speaking img{
+    border-radius:50px; width:100px;
+}
+
+
+@media all and (min-width:768px) {
+    .our-story-section-text {
+        padding-top: 0;
+    }
+    .our-story-section-image.left {
+        width: 47%;
+        float: left;
+    }
+     .our-story-section-image.right {
+        width: 47%;
+        float: right;
+    }
+    .our-story-section-text {
+        width: 47%;
+        float: left;
+    }
+    .our-story-section-text.right {
+        width: 47%;
+        float: right;
+    }
+   
+    /* per alternare il titolo a sopra il blocco testo in schermi grandi... era su immagine in schermi piccoli*/
+    .our-story-section-text-title {
+        display: block;
+    }
+    .our-story-section-image-title {
+        display: none;
+    }
+}
+
+
+/*
+  ========================================
+  ******   THE FARM  ************
+  =======================================s
+*//*OK*/
+
+.the-farm-section {
+    margin: 24px 1.5% 48px;
+}
+
+.the-farm-section-icon {
+    width: 23.5%;
+}
+
+.the-farm-section-icon img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.the-farm-section-icon.left {
+    margin-right: 5%;
+    float: left;
+}
+
+.the-farm-section-icon.right {
+    margin-left: 5%;
+    float: right;
+}
+
+
+/*
+  ========================================
+  ******   CONTACT US  ************
+  =======================================s
+*/
+
+.info-details {
+    text-align: center;
+    margin: 24px 1.5%;
+}
+
+.contact-form {
+    text-align: center;
+    margin: 0 1.5% 48px;
+    border: 1px solid #aaa;
+}
+
+.info-details-section {
+    margin-bottom: 36px;
+}
+
+.info-details-section h6 {
+    margin-bottom: 12px;
+}
+
+.person-mobile-section {
+    display: inline-block;
+    margin: 2% 2%;
+}
+
+.person-image {
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.person-image img {
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.social-icon {
+    margin: 0 20px;
+    font-size: 1.5em;
+}
+
+@media all and (min-width:768px) {
+    .info-details {
+        width: 47%;
+        float: right;
+    }
+    .contact-form {
+        width: 47%;
+        float: left;
+        margin-top: 24px;
+    }
+}
+
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
