@@ -3,3 +3,8 @@ html{
     margin: 124px 124px;
     color:green;
 }
+
+.current{
+    background: blue;
+    color: white;
+}

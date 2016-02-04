@@ -1,4 +1,4 @@
 <nav>
-    <a href="{{site.baseurl}}/index.html"> index </a>
-    <a href="{{site.baseurl}}/news.html"> news </a>
+    <a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %}"> index </a>
+    <a href="{{site.baseurl}}/news.html" class="{% if page.url == '/news.html' %}current{% endif %}"> news </a>
 </nav>
